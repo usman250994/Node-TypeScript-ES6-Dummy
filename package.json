@@ -1,0 +1,44 @@
+{
+  "name": "Blablabla-backend",
+  "version": "1.0.0",
+  "description": "Backend REST APIs for Blablabla DRIVER, RIDER, and PORTALS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch '*.ts' --exec 'ts-node' src/index.ts",
+    "compile": "tsc",
+    "setup-production": "pm2 deploy production setup",
+    "setup-development": "pm2 deploy development setup",
+    "deploy-production": "pm2 deploy production update",
+    "deploy-development": "pm2 deploy development update"
+  },
+  "author": "Muhammad Salar Khan && Usman Ali Siddiqui",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/body-parser": "^1.17.0",
+    "@types/cors": "^2.8.5",
+    "@types/mongoose": "^5.5.11",
+    "aws-sdk": "^2.506.0",
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-validator": "5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "migrate": "^1.6.2",
+    "mongoose": "^5.6.7",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.0",
+    "@types/node": "^12.6.8",
+    "nodemon": "^1.19.1",
+    "pm2": "^3.5.1",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
